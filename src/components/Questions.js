@@ -19,10 +19,10 @@ const questions = [
     id: "2"
   },
   {
-    question: "",
-    answers: ["", "", "", ""],
-    correct: "",
-    id: ""
+    question: "Which movie did Marshall and Lily watch every Valentine's Day?",
+    answers: ["Predator", "Dirty Dancing", "The Princess Bride", "Groundhog Day"],
+    correct: "Predator",
+    id: "3"
   },
   {
     question: "",

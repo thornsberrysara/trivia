@@ -6,6 +6,7 @@ const Container = ({question, options, selected}) => {
     <div className="container">
       <div className="question">{question}</div>
       {answer.map((text, index) => (
+        <div className="answers">
         <button
           key={index}
           className="answerBtn"
@@ -16,6 +17,7 @@ const Container = ({question, options, selected}) => {
         >
           {text}
         </button>
+        </div>
       ))}
     </div>
   );

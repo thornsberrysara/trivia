@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import ReactDOM from "react-dom";
 import "./App.css";
 import Questions from "./components/Questions";
 import Container from "./components/Container";
