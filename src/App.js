@@ -26,7 +26,7 @@ class App extends Component {
       });
     }
     this.setState({
-      responses: this.state.responses < 5 ? this.state.responses + 1 : 5
+      responses: this.state.responses < 10 ? this.state.responses + 1 : 10
     });
   };
 
@@ -47,7 +47,7 @@ class App extends Component {
       <div className="App">
         <h1>How I Met Your Mother Trivia</h1>
         {this.state.questions.length > 0 &&
-          this.state.responses < 5 &&
+          this.state.responses < 10 &&
           this.state.questions.map(({ question, answers, correct, id }) => (
             <Container
               question={question}
@@ -56,7 +56,7 @@ class App extends Component {
               selected={answer => this.checkAnswer(answer, correct)}
             />
           ))}
-        {this.state.responses === 5 ? (
+        {this.state.responses === 10 ? (
           <Result score={this.state.score} playAgain={this.playAgain} />
         ) : null}
       </div>
