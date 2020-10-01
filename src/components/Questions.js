@@ -53,15 +53,15 @@ const questions = [
     id: "8"
   },
   {
-    question: `How often does "The Naked Man" work?`,
+    question: `How often did "The Naked Man" work?`,
     answers: ["1/4 times", "2/5 times", "1/3 times", "2/3 times"],
     correct: "2/3 times",
     id: "9"
   },
   {
-    question: "What determined a happy couple?",
-    answers: ["The Olive Theory", "Daily Brunch", "Living together", "Sharing a booth"],
-    correct: "The Olive Theory",
+    question: "Who did Barney think his father was?",
+    answers: ["Bob Barker", "Bill Gates", "Warren Buffett", "Donald Trump"],
+    correct: "Bob Barker",
     id: "10"
   }
 ];

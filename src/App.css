@@ -17,21 +17,52 @@ h1 {
   margin-bottom: .5em;
 }
 
+.score {
+  margin-bottom: 1em;
+}
+
 button {
-  display: flex;
   padding-left: 1em;
   padding-right: 1em;
   border: 2px solid rgb(81, 138, 150);
   border-radius: 10px;
   margin-right: 1em;
   margin-left: 1em;
-  min-width: 12em;
+  min-width: 14em;
+  color: rgb(0, 0, 65);
+  outline: none;
+}
+
+button:hover {
+  background-color: rgb(81, 138, 150);
+  color: white;
+  cursor: pointer;
 }
 
 .container {
   padding: 1.5em;
+  -webkit-animation: rise 2s cubic-bezier(0.3, 1.2, 0.8, 1.2);
+  animation: rise 2s cubic-bezier(0.3, 1.2, 0.8, 1.2);
+}
+
+@-webkit-keyframes rise {
+  0% {
+    transform: translateY(250px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes rise {
+  0% {
+    transform: translateY(250px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 .question {
   padding: 1em;
+  color: rgb(0, 0, 65);
 }
